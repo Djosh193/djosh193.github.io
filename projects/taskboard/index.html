@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TaskBoard | Lista de Tarefas</title>
+    <meta
+      name="description"
+      content="TaskBoard — lista de tarefas com filtros e persistência em localStorage."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="header">
+      <div class="container header-inner">
+        <a
+          class="brand"
+          href="../../index.html"
+          aria-label="Voltar ao portfólio"
+        >
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>TaskBoard</span>
+        </a>
+
+        <nav class="nav" aria-label="Links">
+          <a href="../../index.html">Portfólio</a>
+          <a
+            href="https://github.com/Djosh193/djosh193.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Código</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" id="conteudo">
+      <section class="hero">
+        <p class="kicker">Projeto 01 • HTML + CSS + JavaScript</p>
+        <h1>Lista de tarefas simples, bem feita</h1>
+        <p class="muted">
+          Adicione, conclua, edite e remova tarefas. Tudo fica salvo no seu
+          navegador usando <strong>localStorage</strong>.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2 class="card-title">Nova tarefa</h2>
+
+        <form id="taskForm" class="form" autocomplete="off">
+          <label class="field">
+            <span>Título</span>
+            <input
+              id="titleInput"
+              type="text"
+              name="title"
+              placeholder="Ex.: Estudar JS por 30 minutos"
+              minlength="2"
+              maxlength="80"
+              required
+            />
+          </label>
+
+          <label class="field">
+            <span>Prioridade</span>
+            <select id="priorityInput" name="priority">
+              <option value="low">Baixa</option>
+              <option value="medium" selected>Média</option>
+              <option value="high">Alta</option>
+            </select>
+          </label>
+
+          <button class="btn primary" type="submit">Adicionar</button>
+        </form>
+      </section>
+
+      <section class="section">
+        <div class="toolbar">
+          <label class="field search">
+            <span>Buscar</span>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Digite para filtrar..."
+            />
+          </label>
+
+          <div class="filters" role="tablist" aria-label="Filtros">
+            <button
+              class="chip"
+              type="button"
+              data-filter="all"
+              aria-pressed="true"
+            >
+              Todas
+            </button>
+            <button
+              class="chip"
+              type="button"
+              data-filter="active"
+              aria-pressed="false"
+            >
+              Ativas
+            </button>
+            <button
+              class="chip"
+              type="button"
+              data-filter="done"
+              aria-pressed="false"
+            >
+              Concluídas
+            </button>
+          </div>
+
+          <button id="clearDoneBtn" class="btn ghost" type="button">
+            Limpar concluídas
+          </button>
+        </div>
+
+        <div class="meta">
+          <p class="muted" id="counterText">0 tarefas</p>
+        </div>
+
+        <ul id="taskList" class="list" aria-label="Lista de tarefas"></ul>
+
+        <div id="emptyState" class="empty" hidden>
+          <h3>Sem tarefas por aqui</h3>
+          <p class="muted">
+            Adicione sua primeira tarefa acima. Dica: use prioridades para se
+            organizar melhor.
+          </p>
+        </div>
+      </section>
+
+      <!-- Modal (edição) -->
+      <dialog id="editDialog" class="dialog">
+        <form method="dialog" class="dialog-inner" id="editForm">
+          <div class="dialog-head">
+            <h2>Editar tarefa</h2>
+            <button class="icon-btn" value="cancel" aria-label="Fechar">
+              ✕
+            </button>
+          </div>
+
+          <label class="field">
+            <span>Título</span>
+            <input
+              id="editTitle"
+              type="text"
+              minlength="2"
+              maxlength="80"
+              required
+            />
+          </label>
+
+          <label class="field">
+            <span>Prioridade</span>
+            <select id="editPriority">
+              <option value="low">Baixa</option>
+              <option value="medium">Média</option>
+              <option value="high">Alta</option>
+            </select>
+          </label>
+
+          <div class="dialog-actions">
+            <button class="btn" value="cancel" type="button" id="cancelEditBtn">
+              Cancelar
+            </button>
+            <button class="btn primary" value="default" type="submit">
+              Salvar
+            </button>
+          </div>
+        </form>
+      </dialog>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <small class="muted">
+          © <span id="year"></span> TaskBoard • Feito por Jorge Simões
+        </small>
+      </div>
+    </footer>
+  </body>
+</html>
