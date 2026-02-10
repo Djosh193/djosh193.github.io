@@ -441,3 +441,26 @@ main {
     justify-content: flex-end;
   }
 }
+
+select {
+  background: #0f172a;
+  color: #e5e7eb;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+select option {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+select option[value="Baixa"] {
+  color: #60a5fa; /* azul */
+}
+
+select option[value="Média"] {
+  color: #facc15; /* amarelo */
+}
+
+select option[value="Alta"] {
+  color: #f87171; /* vermelho */
+}
