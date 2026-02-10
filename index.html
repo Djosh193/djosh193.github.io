@@ -1,54 +1,209 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Início - John Doe, Programador</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jorge Simões | Desenvolvedor Web Junior</title>
+
+    <meta
+      name="description"
+      content="Portfólio de Jorge Simões — Desenvolvedor Web Junior (Front-end, Back-end e Fullstack). HTML, CSS, JavaScript, React, Node.js e bancos de dados."
+    />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="./assets/js/main.js" defer></script>
   </head>
 
   <body>
-    <header>
-      <div>
-        <div class="logo">John Doe</div>
-        <div class="title">Programador Web Full Stack</div>
+    <!-- Acessibilidade -->
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>Jorge Simões</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="./index.html" aria-current="page">Início</a>
+          <a href="./pages/projects.html">Projetos</a>
+          <a href="./pages/about.html">Sobre</a>
+          <a href="./pages/contato.html">Contato</a>
+        </nav>
       </div>
-      <nav>
-        <a href="index.html" class="nav-link">Início</a>
-        <a href="sobre.html" class="nav-link">Sobre Mim</a>
-        <a href="contato.html" class="nav-link">Contato</a>
-      </nav>
-      <div></div>
     </header>
-    <div class="container">
-      <section>
-        <h1>John Doe, Programador</h1>
+
+    <!-- Conteúdo -->
+    <main class="container" id="conteudo">
+      <!-- HERO -->
+      <section class="hero">
+        <p class="kicker">
+          Disponível para oportunidades • Desenvolvedor Web Junior
+        </p>
+
+        <h1>Desenvolvedor Web Junior</h1>
+
         <p>
-          Sou um programador web full stack apaixonado por desenvolvimento de
-          software e tecnologia. Tenho experiência com várias tecnologias web
-          modernas, incluindo HTML, CSS, JavaScript, Ruby on Rails e PostgreSQL.
+          Sou <strong>Jorge Simões</strong>, Bombeiro Militar do Estado de
+          Alagoas e <strong>Bacharel em Engenharia Química</strong>, atualmente
+          em transição de carreira para a área de tecnologia.
+        </p>
+
+        <p>
+          Atuo no desenvolvimento de aplicações web utilizando
+          <strong>HTML</strong>, <strong>CSS</strong>,
+          <strong>JavaScript</strong>, <strong>React</strong> e
+          <strong>Node.js</strong>, com foco em organização, boas práticas e
+          aprendizado contínuo.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="./pages/projects.html">Ver projetos</a>
+          <a class="btn" href="./pages/contato.html">Falar comigo</a>
+
+          <a
+            class="btn ghost"
+            href="https://github.com/Djosh193"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+
+          <a
+            class="btn ghost"
+            href="https://www.linkedin.com/in/jsaj/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </div>
+
+        <ul class="badges" aria-label="Tecnologias">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+        </ul>
+      </section>
+
+      <!-- EXPERIÊNCIA -->
+      <section class="section" aria-labelledby="sec-experiencia">
+        <h2 id="sec-experiencia">Experiência Profissional</h2>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Bombeiro Militar — CBMAL</h3>
+            <p>2018 — atual</p>
+            <p>
+              Atuação no Setor de Atividades Técnicas do Grupamento de Incêndio,
+              realizando vistorias, organização documental e suporte
+              operacional, com foco em processos, padronização e trabalho em
+              equipe.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Estágio em Engenharia Química — HUPAA</h3>
+            <p>2017 — 2018</p>
+            <p>
+              Estágio com foco em segurança do trabalho, apoio técnico e
+              organização de informações.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Pesquisa Acadêmica — UFAL / FUNDEPES / Petrobras</h3>
+            <p>2013 — 2015</p>
+            <p>
+              Participação em projeto científico na área de síntese de
+              catalisadores, seguindo rotinas de análise, registro e colaboração
+              em equipe.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- FORMAÇÃO -->
+      <section class="section" aria-labelledby="sec-formacao">
+        <h2 id="sec-formacao">Formação Acadêmica</h2>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Engenharia Química — Bacharel</h3>
+            <p>Universidade Federal de Alagoas (UFAL)</p>
+            <p>2011 — 2018</p>
+          </article>
+
+          <article class="card">
+            <h3>Ciências da Computação (graduação interrompida)</h3>
+            <p>Universidade Federal de Alagoas (UFAL)</p>
+            <p>2021 — 2022</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJETOS -->
+      <section class="section" aria-labelledby="sec-projetos">
+        <h2 id="sec-projetos">Projetos</h2>
+
+        <p>
+          Atualmente desenvolvendo projetos pessoais para consolidar
+          conhecimentos em Front-end, Back-end e Fullstack.
+        </p>
+
+        <p>
+          Em breve, aplicações utilizando React, Node.js e bancos de dados
+          relacionais serão adicionadas a esta seção.
+        </p>
+
+        <p class="section-link">
+          <a href="./pages/projects.html">Acompanhar projetos →</a>
         </p>
       </section>
 
-      <section>
-        <a href="sobre.html" class="call-to-action">Saiba Mais</a>
-        <a href="contato.html" class="call-to-action">Entre em Contato</a>
-      </section>
+      <!-- CTA FINAL -->
+      <section class="section" aria-labelledby="sec-contato">
+        <h2 id="sec-contato">Vamos conversar?</h2>
 
-      <section class="skills">
-        <h2>Habilidades</h2>
-        <ul>
-          <li>HTML, CSS e JavaScript</li>
-          <li>React e Next.js</li>
-          <li>Ruby on Rails</li>
-          <li>PostgreSQL, MongoDB e Redis</li>
-          <li>Versionamento de código com Git</li>
-          <li>Experiência em desenvolvimento ágil (Scrum)</li>
-        </ul>
+        <p>
+          Estou aberto a oportunidades como Desenvolvedor Web Junior. Se quiser
+          trocar uma ideia ou conhecer melhor meu trabalho, entre em contato.
+        </p>
+
+        <p>
+          <a class="btn primary" href="./pages/contato.html">Ir para contato</a>
+        </p>
       </section>
-    </div>
-    <footer>
-      <p>&copy; 2024 John Doe. Todos os direitos reservados.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>© <span id="year"></span> Jorge Simões • Portfólio</small>
+
+        <div class="social">
+          <a href="mailto:Jorge10_saj@hotmail.com">E-mail</a>
+
+          <a
+            href="https://github.com/Djosh193"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+
+          <a
+            href="https://www.linkedin.com/in/jsaj/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
     </footer>
   </body>
 </html>
