@@ -23,11 +23,22 @@ O objetivo é manter uma estrutura simples, organizada e escalável, servindo co
 
 /
 ├── index.html
-├── /pages
+├── pages/
 │ ├── about.html
 │ ├── projects.html
 │ └── contato.html
-├── /assets
-│ ├── css
-│ ├── js
-│ └── images
+├── assets/
+│ ├── css/
+│ ├── js/
+│ └── images/
+
+---
+
+## 📬 Contato
+
+- 🔗 LinkedIn: https://www.linkedin.com/in/jsaj/
+- 📧 Email: jorge10_saj@hotmail.com
+
+---
+
+⭐ Obrigado por visitar!
