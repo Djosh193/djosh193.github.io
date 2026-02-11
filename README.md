@@ -21,16 +21,17 @@ O objetivo é manter uma estrutura simples, organizada e escalável, servindo co
 
 ## 📂 Estrutura
 
-/
-├── index.html
-├── pages/
-│ ├── about.html
-│ ├── projects.html
-│ └── contato.html
-├── assets/
-│ ├── css/
-│ ├── js/
-│ └── images/
+O projeto está organizado da seguinte forma:
+
+- `index.html` → Página principal
+- `pages/` → Páginas internas
+  - `about.html`
+  - `projects.html`
+  - `contato.html`
+- `assets/` → Recursos estáticos
+  - `css/`
+  - `js/`
+  - `images/`
 
 ---
 
