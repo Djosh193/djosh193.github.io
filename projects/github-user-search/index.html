@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GitHub User Search | Jorge Simões</title>
+    <meta
+      name="description"
+      content="Aplicação em JavaScript que busca dados públicos de usuários do GitHub utilizando a API oficial."
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="app-header">
+        <h1>GitHub User Search</h1>
+        <p>Busque informações públicas de qualquer usuário do GitHub</p>
+      </header>
+
+      <section class="search-section">
+        <input
+          type="text"
+          id="usernameInput"
+          placeholder="Digite o username do GitHub"
+          autocomplete="off"
+        />
+        <button id="searchBtn">Buscar</button>
+      </section>
+
+      <section id="result" class="result-section">
+        <!-- Resultado do usuário será renderizado aqui -->
+      </section>
+    </main>
+  </body>
+</html>
