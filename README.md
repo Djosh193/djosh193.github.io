@@ -39,6 +39,7 @@ O projeto está organizado da seguinte forma:
 
 - 🔗 LinkedIn: https://www.linkedin.com/in/jsaj/
 - 📧 Email: jorge10_saj@hotmail.com
+- 📧 Email2: jorge10.saj@gmail.com
 
 ---
 
