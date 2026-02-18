@@ -91,4 +91,5 @@ Este projeto faz parte do meu processo de aprendizagem em desenvolvimento front-
 
 GitHub: https://github.com/djosh193
 LinkedIn: https://www.linkedin.com/in/jsaj/
+
 Email: [jorge10_saj@hotmail.com](mailto:jorge10_saj@hotmail.com)
